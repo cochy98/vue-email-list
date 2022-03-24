@@ -27,6 +27,21 @@
 <body>
 
     <main id="app">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Al click sul button richiamo una funzione -->
+                    <button class="btn btn-primary mb-5" @click="generateRandomEmail">Genera 10 indirizzi Email random</button>
+                </div>
+
+                <div class="col-12">
+                    <ul>
+                        <!-- Ciclo sulla lunghezza dell'array 'randomEmail' -->
+                        <li v-for="element in randomEmail">{{ element }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
     </main>
 
