@@ -37,7 +37,7 @@
                 <div class="col-12">
                     <ul>
                         <!-- Ciclo sulla lunghezza dell'array 'randomEmail' -->
-                        <li v-for="element in randomEmail">{{ element }}</li>
+                        <li v-if="randomEmail.length == 10" v-for="element in randomEmail">{{ element }}</li>
                     </ul>
                 </div>
             </div>
